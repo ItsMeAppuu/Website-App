@@ -1,0 +1,45 @@
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="smartAppBanner_container__36bUB">
+    <div class="universalHeader_App__2cGK1" style="background-color: #c88ca0;">
+      <a routerLink="/home" class="logo">
+        <img src="assets/images/logo.svg" width="text-center" height="28" alt="Jassa home" position="">
+      </a>
+    </div>
+    <div class="subheader_sub-header-list__2AzRH" style="background-color: yellow; width: 100%; z-index: 9; top: 0px; position: sticky;color: rgb(255, 255, 255) !important;">
+ 
+        <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a routerLink="/home" class="label-lg navbar-link has-after" routerLinkActive="active">Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a routerLink="/service"  class="label-lg navbar-link has-after" routerLinkActive="active">Services</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a routerLink="/portfolio"  class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+            </li>
+  
+          </ul>
+        </nav>
+  
+        <a routerLink="/contact" class="btn btn-primary" style="height: fit-content;">Contact Now</a>
+  
+        <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+  
+      </div>
+    </div>
+  </header>
+  
